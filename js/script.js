@@ -1,16 +1,9 @@
-// Smooth Scroll Functionality
-document.querySelectorAll('header nav ul li a').forEach(link => {
-    link.addEventListener('click', function (e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href').substring(1);
-        const targetSection = document.getElementById(targetId);
-        if (targetSection) {
-            window.scrollTo({
-                top: targetSection.offsetTop,
-                behavior: 'smooth'
-            });
+<script>
+        var navlinks = document.getElementById("navlinks");
+        function showMenu() {
+            navlinks.style.right = "0";
         }
-    });
-});
-
-// Add more interactivity here as needed
+        function hideMenu() {
+            navlinks.style.right = "-200px";
+        }
+    </script>
