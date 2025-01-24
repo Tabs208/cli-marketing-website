@@ -1,37 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teleconsultation Tool</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>RuralHealth CLI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to the Teleconsultation Tool</h1>
+    <section class="header">
         <nav>
-            <ul>
-                <li><a href="#overview">Overview</a></li>
-                <li><a href="#benefits">Benefits</a></li>
-                <li><a href="#how-to-use">How to Use</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#download">Download</a></li>
-            </ul>
+            <a href="index.html"><img src="telecom_img/logo.png" alt="Logo"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="Overview.php">OVERVIEW</a></li>
+                    <li><a href="benefits.php">BENEFITS</a></li>
+                    <li><a href="How-to-use.php">HOW-TO-USE</a></li>
+                    <li><a href="Testimonials.php">TESTIMONIALS</a></li>
+                    <li><a href="Download.php">DOWNLOAD</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
-    </header>
-    <main>
-        <section id="overview">
-            <h2>Product Overview</h2>
-            <p>Brief introduction to the CLI Teleconsultation Tool...</p>
-        </section>
-        <section id="benefits">
-            <h2>Benefits</h2>
-            <p>Details about how it simplifies rural healthcare...</p>
-        </section>
-        <!-- Add other sections here -->
-    </main>
-    <footer>
-        <p>&copy; 2025 Your Company Name</p>
-    </footer>
+        <div class="text-box">
+            <h1>Revolutionizing Rural Healthcare</h1>
+            <p>With the new technology trends<br>Empowering healthcare workers with tools for efficient patient care in remote areas.</p>
+            <a href="#" class="hero-btn">Visit us to know more</a>
+        </div>
+    </section>
+
+    <section class="Overview">
+        <h1>Product Overview</h1>
+        <p>RuralHealth CLI is a lightweight tool designed for rural healthcare providers. It features automated symptom triage, teleconsultation booking, and health education resources.</p>
+        <div class="row">
+            <div class="ABOUT-col">
+                <h3>Symptom Checker</h3>
+                <p>Automatically assess symptoms and provide triaging advice to healthcare workers.</p>
+            </div>
+            <div class="ABOUT-col">
+                <h3>Teleconsultation</h3>
+                <p>Enable remote consultations with healthcare professionals through SMS or email.</p>
+            </div>
+            <div class="ABOUT-col">
+                <h3>Offline Health Education</h3>
+                <p>Provide resources for managing common diseases like malaria and cholera.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="benefits" class="hospital">
+        <h1>Benefits</h1>
+        <p>Empowering rural healthcare workers with essential tools.</p>
+        <div class="row">
+            <div class="hospital-col">
+                <img src="telecom_img/23671105_6834274.jpg" alt="Automated Triage">
+                <div class="layer">
+                    <h3>Automated Triage</h3>
+                </div>
+            </div>
+            <div class="hospital-col">
+                <img src="telecom_img/woman-7529904_1920.png" alt="Streamlined Consultations">
+                <div class="layer">
+                    <h3>Streamlined Consultations</h3>
+                </div>
+            </div>
+            <div class="hospital-col">
+                <img src="telecom_img/ai-generated-8722616_1920.jpg" alt="Supply Management">
+                <div class="layer">
+                    <h3>Supply Management</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-to-use" class="doctors">
+        <h1>How to Use</h1>
+        <p>Follow these simple steps:</p>
+        <div class="row">
+            <div class="doctors-col">
+                <img src="telecom_img/installation.png" alt="Step 1: Installation">
+                <h3>Step 1: Installation</h3>
+                <p>Download and install RuralHealth CLI on your device.</p>
+            </div>
+            <div class="doctors-col">
+                <img src="telecom_img/runningcode.png" alt="Step 2: Use Commands">
+                <h3>Step 2: Use Commands</h3>
+                <p>Use commands like <code>triage</code>, <code>book</code>, and <code>educate</code>.</p>
+            </div>
+            <div class="doctors-col">
+                <img src="telecom_img/samplecommands.png" alt="Step 3: Support">
+                <h3>Step 3: Support</h3>
+                <p>Access tutorials and support for efficient usage.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="Testimonials">
+        <h1>What Our Users Say</h1>
+        <p>Feedback from rural healthcare professionals.</p>
+        <div class="row">
+            <div class="Testimonials-col">
+                <img src="telecom_img/user1.png" alt="John Doe">
+                <div>
+                    <p>"This tool transformed healthcare delivery in our village."</p>
+                    <h3>John Doe</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+            <div class="Testimonials-col">
+                <img src="telecom_img/user2.png" alt="Jane Smith">
+                <div>
+                    <p>"Efficient and easy to use, a true lifesaver."</p>
+                    <h3>Jane Smith</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="download" class="cta">
+        <h1>Download Now</h1>
+        <p>Get started with RuralHealth CLI today.</p>
+        <a href="#" class="hero-btn">Download</a>
+    </section>
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>RuralHealth CLI is dedicated to enhancing patient care in remote areas through innovative solutions.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+    </section>
+
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function showMenu() {
+            navlinks.style.right = "0";
+        }
+        function hideMenu() {
+            navlinks.style.right = "-200px";
+        }
+    </script>
 </body>
 </html>
+
+ 
